@@ -1,0 +1,41 @@
+.header-container {
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+
+}
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
+ul {
+    list-style-type: none;   
+}
+.nav-container {
+    
+}
+.address-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.address-container {
+    
+}
+.address-contact-link {
+    text-decoration: none;
+}
+
+.title-hero {
+    font-size: 88px;
+}
+.hero-section {
+    padding: 120px 0;
+    background-image: linear-gradient(rgba(24, 25, 33, 0.5), rgba(24, 25, 33, 0.5)), url("../image/photo.jpg");
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover; 
+    margin: 0 auto;
+}
