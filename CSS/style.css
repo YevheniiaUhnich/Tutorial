@@ -47,7 +47,7 @@ ul {
 }
 .hero-section {
     padding: 120px;
-    background-image: linear-gradient(rgba(217, 231, 15, 0.3), rgba(101, 63, 238, 0.4)), url("../image/photo.jpg");
+    background-image: linear-gradient(rgba(232, 233, 221, 0.3), rgba(232, 229, 241, 0.4)), url("../image/photo.jpg");
     background-repeat: no-repeat; 
     background-position: center;
     background-size: cover; 
