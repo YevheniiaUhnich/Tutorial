@@ -1,129 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zorianiy</title>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мікрозвички Блог</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="healthy-habits-map.jpg"
+        alt="Healthy Habits"
+        class="header-image" />
+    </header>
 
-  <link 
-  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
-  integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" 
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <div class="container">
+      <!-- Sidebar Posts -->
+      <aside class="sidebar">
+        <h2>Статті: Мікрозвички</h2>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Пошук за назвою або тегом..." />
+        <aside class="sidebar">
+          <h2>Мікрозвички</h2>
+          <div id="posts">
+            <div class="post-card">
+              <h3>Мікрозвички, які змінили мій день</h3>
+              <p>#продуктивність #звички</p>
+            </div>
+            <div class="post-card">
+              <h3>5 ранкових мікрозвичок</h3>
+              <p>#ранок #здоровʼя</p>
+            </div>
+            <div class="post-card">
+              <h3>Вечірні ритуали для розслаблення</h3>
+              <p>#вечір #спокій</p>
+            </div>
+          </div>
+        </aside>
+        <div id="posts"></div>
+      </aside>
 
-  <link rel="stylesheet" href="./CSS/style.css" />
+      <!-- Main Article -->
+      <main>
+        <div class="article-header">
+          <h1>Мікрозвички, які змінили мій день</h1>
+          <p class="meta">Автор: Євгенія | Дата: 20 травня 2025</p>
+          <img
+            src="https://img.freepik.com/free-vector/healthy-lifestyle-diet-fitness-vector-sign-shape-heart-with-multiple-icons-depicting-various-sports-vegetables-cereals-seafood-meat-fruit-sleep-weight-beverages_1150-17421.jpg"
+            alt="Healthy Habits Illustration"
+            class="blog-header-img" />
+          <p>
+            Привіт! Сьогодні я хочу поділитися з вами своїм досвідом, як
+            маленькі зміни — мікрозвички — допомогли мені покращити якість
+            життя, підвищити продуктивність і зберігати гарний настрій.
+          </p>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <h2>Що таке мікрозвички?</h2>
+          <p>
+            Мікрозвички — це дуже маленькі, легкі у виконанні дії, які не
+            потребують багато часу чи зусиль. Вони настільки прості, що важко їх
+            пропустити чи забути. Але найголовніше — ці маленькі кроки створюють
+            потужний ефект з часом.
+          </p>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Raleway:wght@700&family=Roboto:wght@700&display=swap" 
-    rel="stylesheet" />
-</head>
+          <h2>Мої мікрозвички, які змінили день</h2>
+          <ul>
+            <li>
+              🛏️ <strong>Застеляти ліжко щоранку</strong><br />Це здається такою
+              дрібницею, але щоранковий ритуал з заправляння ліжка дає відчуття
+              порядку і контролю над своїм простором. Маленька перемога, яка
+              задає тон усьому дню.
+            </li>
+            <li>
+              🧘 <strong>1 хвилина глибокого дихання</strong><br />Перед тим як
+              почати роботу або коли відчуваю стрес — роблю кілька глибоких
+              вдихів і видихів. Це заспокоює розум і допомагає зосередитися.
+            </li>
+            <li>
+              📝 <strong>Записати одну вдячність щодня</strong><br />Веду
+              щоденник вдячності — це допомагає помічати позитивні моменти
+              навіть у звичайному дні. Навіть маленька річ може змінити настрій.
+            </li>
+            <li>
+              🚰 <strong>Стакан води відразу після пробудження</strong><br />Ця
+              проста звичка допомагає організму прокинутися і зарядитися
+              енергією.
+            </li>
+            <li>
+              📵 <strong>5 хвилин без телефону зранку</strong><br />Відмовляюся
+              від гаджетів на перші п’ять хвилин після пробудження, щоб не
+              «залипати» в новини або соцмережі, а почати день усвідомлено.
+            </li>
+          </ul>
 
-<body>
+          <h2>Чому це працює?</h2>
+          <p>
+            Ці маленькі звички легко вбудувати у щоденний розпорядок. Вони не
+            вимагають мотивації чи сили волі, а разом дають величезний ефект:
+            менше стресу, більше концентрації, кращий настрій.
+          </p>
 
-  <header class="header-container">
-    <nav class="nav-container">
-      <img src="./image/logotitle.webp" alt="logozorianiy" width="125" />
-      <ul class="header-nav">
-        <li>Зоряний</li>
-        <li>Супутник</li>
-        <li>Про нас</li>
-        <li>Наші контакти</li>
-      </ul>
-      </nav>
+          <h2>Спробуйте і ви!</h2>
+          <p>
+            Обирайте одну або кілька звичок, які резонують саме з вами.
+            Починайте поступово, не тисніть на себе. З часом це перетвориться на
+            природний спосіб життя.
+          </p>
+        </div>
 
-      <address class="address-section">
-      <ul class="address-container">
-        <li class="address-contact"><a href="mailto:e-mail:kr.zorianyi@gmail.com" class="address-contact-link">kr.zorianyi@gmail.com</a> </li>
-        <li class="address-contact"><a href="tel:+38 (097) 205-50-81" class="address-contact-link">+38 (097) 205-50-81</a></li>
-      </ul>
-    
-</address>
-  </header>
+        <article>
+          <p>
+            Маленькі звички формують великі зміни. У цьому пості я ділюся своїми
+            улюбленими мікрозвичками, які справді зробили мій день кращим.
+          </p>
+          <!-- додатковий текст можна вставити тут -->
+        </article>
 
-  <main>
-    
-    <!-- hero -->
-    <section class="hero-section">
-      <div class="container">
-        <h1 class="title-hero">КНП "ДЗОВ "ЗОРЯНИЙ"</h1>
-        <button class="button-hero" type="button">ПРО НАС</button>
-      </div>
-    </section>
+        <!-- Comments -->
+        <section class="comments">
+          <h3>Коментарі</h3>
+          <textarea placeholder="Залиш свій коментар..."></textarea>
+          <button>Надіслати</button>
+        </section>
 
-    <!-- секція три табори -->
-    <section class="section-camp">
-      <div class="container-camp-our">
-      <div>
-        <ul>
-          <li>КНП "ДЗОВ "Зоряний"</li>
-          <li>Photo</li>
-          <button>Детальніше</button>
-          <!-- Соціальні мережі -->
+        <!-- Share Buttons -->
+        <div class="share-buttons">
+          <span>Поділитись:</span>
+          <button class="facebook">Facebook</button>
+          <button class="twitter">Twitter</button>
+          <button class="telegram">Telegram</button>
+          <button class="instagram">Instagram</button>
+        </div>
+      </main>
 
-        </ul>
+      <!-- Habits List -->
+      <aside class="habits">
+        <h2>Мікрозвички</h2>
+        <div class="habit-card">
+          <span class="emoji">🌞</span>
+          <div class="content">
+            <input type="checkbox" class="habit-checkbox" />
+            <strong>Ранкове сонце</strong>
+            <p>Виходити на 5 хвилин на вулицю вранці</p>
+            <input
+              type="text"
+              placeholder="Коментар..."
+              class="habit-comment" />
+          </div>
+          <span class="star">⭐</span>
+        </div>
 
-      </div>
+        <div class="habit-card">
+          <span class="emoji">🧘‍♀️</span>
+          <div class="content">
+            <input type="checkbox" class="habit-checkbox" />
+            <strong>1 хвилина тиші</strong>
+            <p>Коротка пауза без телефону й шуму</p>
+            <input
+              type="text"
+              placeholder="Коментар..."
+              class="habit-comment" />
+          </div>
+          <span class="star">⭐</span>
+        </div>
 
-      <div>
-        <ul>
+        <div class="habit-card">
+          <span class="emoji">📓</span>
+          <div class="content">
+            <input type="checkbox" class="habit-checkbox" />
+            <strong>Щоденник вдячності</strong>
+            <p>Записати 1 річ, за яку вдячний</p>
+            <input
+              type="text"
+              placeholder="Коментар..."
+              class="habit-comment" />
+          </div>
+          <span class="star">⭐</span>
+        </div>
 
-        </ul>
+        <div class="habit-card">
+          <span class="emoji">🚰</span>
+          <div class="content">
+            <input type="checkbox" class="habit-checkbox" />
+            <strong>Вода зранку</strong>
+            <p>Випити склянку води після пробудження</p>
+            <input
+              type="text"
+              placeholder="Коментар..."
+              class="habit-comment" />
+          </div>
+          <span class="star">⭐</span>
+        </div>
 
-      </div>
+        <div class="habit-card">
+          <span class="emoji">📴</span>
+          <div class="content">
+            <input type="checkbox" class="habit-checkbox" />
+            <strong>Режим "без екранів"</strong>
+            <p>10 хвилин на день без гаджетів</p>
+            <input
+              type="text"
+              placeholder="Коментар..."
+              class="habit-comment" />
+          </div>
+          <span class="star">⭐</span>
+        </div>
 
-      <div>
-        <ul>
+        <div class="habit-card">
+          <span class="emoji">🚶‍♂️</span>
+          <div class="content">
+            <input type="checkbox" class="habit-checkbox" />
+            <strong>Міні-прогулянка</strong>
+            <p>5 хвилин активності після сидіння</p>
+            <input
+              type="text"
+              placeholder="Коментар..."
+              class="habit-comment" />
+          </div>
+          <span class="star">⭐</span>
+        </div>
 
-        </ul>
+        <div class="habit-card">
+          <span class="emoji">📅</span>
+          <div class="content">
+            <input type="checkbox" class="habit-checkbox" />
+            <strong>План на день</strong>
+            <p>Записати 1-3 задачі зранку</p>
+            <input
+              type="text"
+              placeholder="Коментар..."
+              class="habit-comment" />
+          </div>
+          <span class="star">⭐</span>
+        </div>
 
-      </div>
-
+        <p id="progress">Прогрес: 0/0</p>
+      </aside>
     </div>
-    </section>
-    
-      
 
-  </main>
-
-  <footer>
-
-  </footer>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
-
-
- 
-
-<div class="section-footer">
-  <div class="container">
-    <div class="footer-nav-div">
-    <ul class="footer-ul">
-      <li class="footer-li">
-        <a href="#about-us" class="footer-a">about us</a>
-      </li>
-      <li class="footer-li">
-        <a href="#customer-order" class="footer-a">customer order</a>
-      </li>
-      <li class="footer-li">
-        <a href="#our-collection" class="footer-a">our collection</a>
-      </li>
-      <li class="footer-li">
-        <a href="#testimonials" class="footer-a">testimonials</a>
-      </li>
-    </ul>
-    <p class="footer-p">
-      A touch of <span class="footer-p-span">Ukrainian </span>culture in every
-      embroidery
-    </p>
-  </div>
-  </div>
-  <div class="footer-ornament"></div>
-</div>

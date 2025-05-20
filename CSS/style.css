@@ -1,60 +1,240 @@
-.header-container {
-    display: flex;
-    flex-direction: row;
-    padding-right: 40px;
-
-}
-.header-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 20px
+/* Загальні стилі */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0fff0;
+  color: #333;
 }
 
-ul {
-    list-style-type: none;   
+.container {
+  display: flex;
+  padding: 20px;
 }
-.nav-container {
-    
+
+/* Хедер */
+.header-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 300px;
+  display: block;
 }
-.address-section {
-    display: flex;
+
+/* Сайдбар */
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #e1ffe1;
+  border-right: 2px solid #c0e6c0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+.sidebar h2 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.post-card {
+  background-color: #ffffff;
+  border: 1px solid #cceccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-card h3 {
+  font-size: 1.1em;
+  margin: 0 0 5px;
+}
+
+.post-card p {
+  font-size: 0.9em;
+  color: #666;
+  margin: 0;
+}
+
+/* Основна частина */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #b2dfb2;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.article-default {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.article-default h1 {
+  margin-top: 0;
+  font-size: 1.8em;
+  color: #2e7d32;
+}
+
+.article-default .meta {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.feature-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.article-default ul {
+  padding-left: 20px;
+}
+
+.article-default li {
+  margin-bottom: 10px;
+}
+
+/* Коментарі */
+.comments {
+  margin-top: 30px;
+}
+
+.comments textarea {
+  width: 100%;
+  height: 80px;
+  border-radius: 8px;
+  border: 1px solid #cceccc;
+  padding: 10px;
+  resize: vertical;
+}
+
+.comments button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #81c784;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.comments button:hover {
+  background-color: #66bb6a;
+}
+
+/* Кнопки поширення */
+.share-buttons {
+  margin-top: 20px;
+}
+
+.share-buttons button {
+  margin-right: 10px;
+  background-color: #a5d6a7;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+.share-buttons .facebook {
+  background-color: #3b5998;
+}
+.share-buttons .twitter {
+  background-color: #1da1f2;
+}
+.share-buttons .telegram {
+  background-color: #0088cc;
+}
+.share-buttons .instagram {
+  background-color: #e1306c;
+}
+
+/* Habit Cards */
+.habits {
+  width: 250px;
+  padding: 20px;
+  background-color: #e1ffe1;
+  border-left: 2px solid #c0e6c0;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+.habits h2 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.habit-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #cceccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.habit-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.habit-card .emoji {
+  font-size: 1.8em;
+  margin-right: 10px;
+}
+
+.habit-card .content strong {
+  display: block;
+  font-size: 1.1em;
+  color: #388e3c;
+}
+
+.habit-card .content p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+@media (max-width: 900px) {
+  .container {
     flex-direction: column;
-    justify-content: flex-end;
-}
-.address-container {
-    
-}
-.address-contact-link {
-    text-decoration: none;
-}
-
-.title-hero {
-    font-family: 'Dela Gothic One', cursive;
-    width: 560px;
-    text-align: left;
-    font-size: 88px;
-    color: blue;
-    -webkit-text-stroke: 2px rgb(253, 251, 252);
-    text-shadow: linear-gradient(to right, #00ff00, #006400);
+  }
+  .sidebar,
+  .habits {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+  }
+  main {
+    padding: 10px;
+  }
 }
 
-.button-hero {
-    font-weight: 600;
-    width: 148px;
-    height: 40px;
-    background-color: blue; 
-    color:rgb(253, 251, 252);  
-}
-.hero-section {
-    padding: 120px;
-    background-image: linear-gradient(rgba(232, 233, 221, 0.3), rgba(232, 229, 241, 0.4)), url("../image/photo.jpg");
-    background-repeat: no-repeat; 
-    background-position: center;
-    background-size: cover; 
-    
-    display: flex;
-    flex-direction: row;
-    
-    
-    
+.blog-header-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 5px solid #a8d08d;
 }
